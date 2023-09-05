@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: partner-catalog
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads-stage/burrzinga-tenant/partner-catalog/partner-catalog@sha256:c90b050ce85d2a0fef46597ad24c78d48b1999ad398c91fa9cdb5ed051718b6a
+        name: my-java-springboot
+        resources: {}
+status: {}
